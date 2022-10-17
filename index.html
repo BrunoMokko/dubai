@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="slick-theme.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="font/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+<div class="page">
+    <!--Header-->
+    <header class="header">
+        <div class="container container-header">
+            <!--Left Side Header-->
+            <div class="left_side-header">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li class="nav__item">
+                            <!--DropDown-->
+                            <a onclick="myFunction()" class="dropbtn" href="#">Buy &#9660;</a>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a class="drop_link" href="#">Category number one </a>
+                                <a class="drop_link" href="#">Apartments in Dubai</a>
+                                <a class="drop_link" href="#">Category number twenty five</a>
+                            </div>
+                        </li>
+                        <li class="nav__item"><a href="">Blog</a></li>
+                        <li class="nav__item"><a href="">About</a></li>
+                        <li class="nav__item"><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--Right Side Header-->
+            <div class="right_side-header">
+                    <a id="myBtn" href="#">Book a consultation</a>
+                <div class="lang">
+                    <a href="">EN</a>
+                    <a href="">RU</a>
+                </div>
+                <div class="tel">
+                    <a href="">+7 (212) 674-25-10</a>
+                </div>
+            </div>
+            <!--Burger-->
+            <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <!--Slider-->
+    <section class="section">
+        <div class="slider">
+            <div class="item">
+                <img class="slider_img" src="img/slider/slider1.png" alt="">
+                <div class="sliderText">
+                    <p class="intro_suptitle">Lorem Ipsum</p>
+                    <h1 class="intro_title">Welcome home <br> <span>to</span> luxury</h1>
+                    <a class="intro_btn" href="#">Book a consultation &#10095;</a>
+                </div>
+                <div class="social">
+                    <a href="">
+                        <i id="social_facebook" class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                        <i id="social_twitter" class="fab fa-twitter"></i>
+                    </a>
+                    <a href="">
+                        <i id="social_youtube" class="fab fa-youtube"></i>
+                    </a>
+                    <a href="">
+                        <i id="social_instagram" class="fab fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i id="social_linkedin" class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <img class="slider_img" src="img/slider/slider2.png" alt="">
+                <div class="sliderText">
+                    <p class="intro_suptitle">Lorem Ipsum</p>
+                    <h1 class="intro_title">Welcome home <br> <span>to</span> luxury</h1>
+                    <a class="intro_btn" href="#">Book a consultation &#10095;</a>
+                    <div class="social">
+                        <a href="">
+                            <i id="social_facebook" class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="">
+                            <i id="social_twitter" class="fab fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i id="social_youtube" class="fab fa-youtube"></i>
+                        </a>
+                        <a href="">
+                            <i id="social_instagram" class="fab fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i id="social_linkedin" class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="slider_img" src="img/slider/slider1.png" alt="">
+                <div class="sliderText">
+                    <p class="intro_suptitle">Lorem Ipsum</p>
+                    <h1 class="intro_title">Welcome home <br> <span>to</span> luxury</h1>
+                    <a class="intro_btn" href="#">Book a consultation &#10095;</a>
+                    <div class="social">
+                        <a href="">
+                            <i id="social_facebook" class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="">
+                            <i id="social_twitter" class="fab fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i id="social_youtube" class="fab fa-youtube"></i>
+                        </a>
+                        <a href="">
+                            <i id="social_instagram" class="fab fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i id="social_linkedin" class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a class="prev" onClick="minusSlider()">Prev</a>
+            <a class="next" onClick="plusSlider()">Next</a>
+            <div class="slider-dots">
+                <span class="slider-dots_item" onClick="currentSlider(1)">01</span>
+                <span class="text__dots">Lorem Ipsum <br> Dolorem apset</span>
+                <span class="slider-dots_item" onClick="currentSlider(2)">02</span>
+                <span class="text__dots">Lorem Ipsum <br> Dolorem apset</span>
+                <span class="slider-dots_item" onClick="currentSlider(3)">03</span>
+                <span class="text__dots">Lorem Ipsum <br> Dolorem apset</span>
+            </div>
+        </div><!--/Slider-->
+    </section>
+    <!--Carusel Header-->
+    <div class="projets">
+        <div class="proj-title">
+            <h3>Latest projects</h3>
+        </div>
+        <div class="proj-links">
+            <a href="#">All</a>
+            <a href="#">Building</a>
+            <a href="#">Interior</a>
+            <a href="#">View all projects</a>
+        </div>
+    </div>
+    <!--Carusel-->
+    <section class="regular slider carusel-box">
+        <div class="project-slide">
+            <div class="carusel-text">
+                <h4>Villas</h4>
+            </div>
+            <a href=""><img src="img/project_slider/1.png">
+                <div class="overlay">
+                    <div class="overlay_text">Villas</div>
+                    <p class="overlay_suptitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.</p>
+                    <a class="overlay_link" href="#">See project &#10095;</a>
+                </div>
+            </a>
+        </div>
+        <div class="project-slide">
+            <div class="carusel-text">
+                <h4>Dubai</h4>
+            </div>
+            <a href=""><img src="img/project_slider/4.png">
+                <div class="overlay">
+                    <div class="overlay_text">Hello World</div>
+                    <p class="overlay_suptitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.</p>
+                    <a class="overlay_link" href="#">See project &#10095;</a>
+                </div>
+            </a>
+        </div>
+        <div class="project-slide">
+            <div class="carusel-text">
+                <h4>Houses</h4>
+            </div>
+            <a href=""><img src="img/project_slider/3.png">
+                <div class="overlay">
+                    <div class="overlay_text">Hello World</div>
+                    <p class="overlay_suptitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.</p>
+                    <a class="overlay_link" href="#">See project &#10095;</a>
+                </div>
+            </a>
+        </div>
+        <div class="project-slide">
+            <div class="carusel-text">
+                <h4>Villas</h4>
+            </div>
+            <a href=""><img src="img/project_slider/4.png">
+                <div class="overlay">
+                    <div class="overlay_text">Hello World</div>
+                    <p class="overlay_suptitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.</p>
+                    <a class="overlay_link" href="#">See project &#10095;</a>
+                </div>
+            </a>
+        </div>
+        <div class="project-slide">
+            <div class="carusel-text">
+                <h4>Villas</h4>
+            </div>
+            <a href=""><img src="img/project_slider/1.png">
+                <div class="overlay">
+                    <div class="overlay_text">Hello World</div>
+                    <p class="overlay_suptitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.</p>
+                    <a class="overlay_link" href="#">See project &#10095;</a>
+                </div>
+            </a>
+        </div>
+        <div class="project-slide">
+            <div class="carusel-text">
+                <h4>Dubai</h4>
+            </div>
+            <a href=""><img src="img/project_slider/4.png">
+                <div class="overlay">
+                    <div class="overlay_text">Hello World</div>
+                    <p class="overlay_suptitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.</p>
+                    <a class="overlay_link" href="#">See project &#10095;</a>
+                </div>
+            </a>
+        </div>
+        <div class="project-slide">
+            <div class="carusel-text">
+                <h4>Houses</h4>
+            </div>
+            <a href=""><img src="img/project_slider/3.png">
+                <div class="overlay">
+                    <div class="overlay_text">Hello World</div>
+                    <p class="overlay_suptitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.</p>
+                    <a class="overlay_link" href="#">See project &#10095;</a>
+                </div>
+            </a>
+        </div>
+        <div class="project-slide">
+            <div class="carusel-text">
+                <h4>Villas</h4>
+            </div>
+            <a href=""><img src="img/project_slider/4.png">
+                <div class="overlay">
+                    <div class="overlay_text">Hello World</div>
+                    <p class="overlay_suptitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.</p>
+                    <a class="overlay_link" href="#">See project &#10095;</a>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="section">
+        <div class="expertise">
+            <p class="expert_suptitle">Our expertise</p>
+            <h2 class="expert_title">"The best apartment in Dubai" we will find your dream</h2>
+            <p class="expert_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh massa, euismod ut libero id, blandit posuere augue. Morbi porta volutpat diam egestas ultrices. Phasellus tempus fringilla neque, nec viverra orci tristique vel. In efficitur vehicula magna, varius pellentesque nisl vehicula vel. Aenean vel sem ac elit commodo finibus in nec massa. Nulla facilisi. Nulla vestibulum venenatis sollicitudin. Etiam auctor mollis justo eu tincidunt. Aliquam varius varius tortor. Cras id venenatis sem. Quisque ut risus ex. Sed et tempor massa. Praesent ac eros hendrerit, congue justo ac, molestie urna. Fusce nec neque vitae dolor dapibus elementum. Maecenas nec orci quis sem condimentum dapibus varius a lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <iframe width="82%" height="650px" src="https://www.youtube.com/embed/GeGRBGDsSDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="quote">
+            <p>“Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.” <span>— Mary Kay Ash</span></p>
+        </div>
+        <div class="expertise_items">
+            <div class="expert__item">
+                <img src="img/expertise/1.png" width="98%" alt="">
+                <p class="expert_item-text">Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.</p>
+            </div>
+            <div class="expert__item">
+                <img src="img/expertise/2.png" width="98%" alt="">
+                <p class="expert_item-text">Vivamus non diam vel lorem efficitur mattis in gravida ante. Ut ullamcorper dapibus ante, eu tincidunt orci feugiat vel. Curabitur eget lectus lectus. Pellentesque malesuada, felis at accumsan interdum, nisl mi fermentum est, eu suscipit dui lorem a dui. Aliquam rhoncus risus in leo vestibulum efficitur. Suspendisse tortor quam, faucibus a lacinia a, bibendum vitae quam. Suspen disse et metus et orci rutrum dictum eu eu nibh. Suspendisse blandit in diam in rhoncus. Nam volutpat hendrerit enim, sed aliquet quam gravida at. Nullam dictum sagittis nisi, eu porta sem mollis eu. Nulla faucibus sed ipsum sed sodales. Curabitur varius iaculis felis, in aliquet sem suscipit quis. Ut vulputate, magna ac bibendum elementum, nulla magna tincidunt urna, a venenatis dolor arcu sed leo. </p>
+            </div>
+        </div>
+    </section>
+    <!--Contact Us-->
+    <section class="section">
+        <div class="contact_container">
+            <p class="contact_suptitle">Do you have any questions?</p>
+            <h2 class="contact_title">Contact us</h2>
+            <form class="contact_form">
+                <input type="email" name="email" id="user_mail" placeholder="Enter your email" autocomplete="on">
+                <button class="contact_btn">Send</button>
+            </form>
+
+        </div>
+    </section>
+    <!--Useful Article-->
+    <section class="section">
+        <div class="useful-art">
+            <div class="useful-header">
+                <h3 class="useful-title">Useful articles</h3>
+                <a class="useful-link" href="#">View all articles <span>&#10095;</span></a>
+            </div>
+            <div class="useful-box">
+                <div class="useful-card">
+                    <img src="./img/useful/1.png" alt="">
+                    <h5 class="card-title">Discover Architecture</h5>
+                    <div class="useful-overlay">
+                        <p class="use-overlay-date">Jule 03, 2022</p>
+                        <h4 class="use-overlay-title">Discover Architecture</h4>
+                        <p class="use-overlay-text">Projects for many large domestic and foreign corporations, enterprises in many elds such</p>
+                        <a class="use-overlay-link" href="#">Learn more <span>&#10095;</span></a>
+                    </div>
+                </div>
+                <div class="useful-card">
+                    <img src="./img/useful/2.png" alt="">
+                    <h5 class="card-title">Discover Architecture</h5>
+                    <div class="useful-overlay">
+                        <p class="use-overlay-date">Jule 03, 2022</p>
+                        <h4 class="use-overlay-title">Discover Architecture</h4>
+                        <p class="use-overlay-text">Projects for many large domestic and foreign corporations, enterprises in many elds such</p>
+                        <a class="use-overlay-link" href="#">Learn more <span>&#10095;</span></a>
+                    </div>
+                </div>
+                <div class="useful-card">
+                    <img src="./img/useful/1.png" alt="">
+                    <h5 class="card-title">Discover Architecture</h5>
+                    <div class="useful-overlay">
+                        <p class="use-overlay-date">Jule 03, 2022</p>
+                        <h4 class="use-overlay-title">Discover Architecture</h4>
+                        <p class="use-overlay-text">Projects for many large domestic and foreign corporations, enterprises in many elds such</p>
+                        <a class="use-overlay-link" href="#">Learn more <span>&#10095;</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Comment-->
+    <section class="section">
+        <div class="comment">
+            <div class="comment_box">
+                <img class="icon" src="img/comment/robert.png" alt="icon">
+                <h4 class="comment_name">Robert</h4>
+                <h5 class="comment_prof">Founder in <span>Apple inc.</span></h5>
+                <p class="comment_text">Founded in 2007, Sparch is specializing in providing innovative services such as website design, brand identity and marketing
+                </p>
+                <img class="comment_after" src="img/comment/1.png" alt="">
+            </div>
+            <div class="comment_box">
+                <img class="icon" src="img/comment/paul.png" alt="icon">
+                <h4 class="comment_name">Paul</h4>
+                <h5 class="comment_prof">Owner in <span>Paul.com</span></h5>
+                <p class="comment_text">Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.
+                </p>
+                <img class="comment_after" src="img/comment/1.png" alt="">
+            </div>
+            <div class="comment_box comment_box_active">
+                <img class="icon" src="img/comment/robert.png" alt="icon">
+                <h4 class="comment_name">Robert</h4>
+                <h5 class="comment_prof">Founder in <span>Apple inc.</span></h5>
+                <p class="comment_text">Founded in 2007, Sparch is specializing in providing innovative services such as website design, brand identity and marketing
+                </p>
+                <img class="comment_after" src="img/comment/1.png" alt="">
+            </div>
+            <div class="comment_box">
+                <img class="icon" src="img/comment/paul.png" alt="icon">
+                <h4 class="comment_name">Paul</h4>
+                <h5 class="comment_prof">Owner in <span>Paul.com</span></h5>
+                <p class="comment_text">Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.
+                </p>
+                <img class="comment_after" src="img/comment/1.png" alt="">
+            </div>
+            <div class="comment_box">
+                <img class="icon" src="img/comment/robert.png" alt="icon">
+                <h4 class="comment_name">Robert</h4>
+                <h5 class="comment_prof">Founder in <span>Apple inc.</span></h5>
+                <p class="comment_text">Founded in 2007, Sparch is specializing in providing innovative services such as website design, brand identity and marketing
+                </p>
+                <img class="comment_after" src="img/comment/1.png" alt="">
+            </div>
+            <div class="comment_box">
+                <img class="icon" src="img/comment/paul.png" alt="icon">
+                <h4 class="comment_name">Paul</h4>
+                <h5 class="comment_prof">Owner in <span>Paul.com</span></h5>
+                <p class="comment_text">Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.
+                </p>
+                <img class="comment_after" src="img/comment/1.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="faq">
+            <h3 class="faq-title">FAQ</h3>
+            <button class="faq-accordion">The largest and oldest Quotations Page on the Web with about 30 categories</button>
+            <div class="faq-panel">
+                <p>Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.</p>
+            </div>
+            <button class="faq-accordion">A huge collection of inspirational quotes, thoughts of greatest minds in history</button>
+            <div class="faq-panel">
+                <p>Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.</p>
+            </div>
+            <button class="faq-accordion">Quotations from the great works of literature</button>
+            <div class="faq-panel">
+                <p>Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.</p>
+            </div>
+            <button class="faq-accordion">Read quotes and sayings from famous people in history</button>
+            <div class="faq-panel">
+                <p>Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.</p>
+            </div>
+            <button class="faq-accordion">Collected quotes from Albert Einstein</button>
+            <div class="faq-panel">
+                <p>Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_box">
+            <img class="footer_logo" src="img/logo.png" alt="logo">
+            <div class="footer_nav">
+                <div class="footer_content">
+                    <h5>Buy</h5>
+                <ul>
+                    <li><a href="#">Apartment in Dubai</a></li>
+                    <li><a href="#">House in Dubai</a></li>
+                    <li><a href="#">Apartments in Dubai</a></li>
+                    <li><a href="#">Loft in Dubai</a></li>
+                    <li><a href="#">Penthouse in Dubai</a></li>
+                    <li><a href="#">Villa in Dubai</a></li>
+                </ul>
+                </div>
+                <div class="footer_content">
+                    <h5>Services</h5>
+                <ul>
+                    <li><a href="#">Property management in Dubai, UAE</a></li>
+                    <li><a href="#">Sell property in Dubai, UAE</a></li>
+                    <li><a href="#">Rent property in Dubai, UAE</a></li>
+                    <li><a href="#">Investments in Dubai, UAE</a></li>
+                    <li><a href="#">Real estate for cryptocurrency in Dubai</a></li>
+                    <li><a href="#">Moving to Dubai, UAE</a></li>
+                </ul>
+                </div>
+                <div class="footer_content">
+                    <h5>Information</h5>
+                <ul>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Podcasts</a></li>
+                    <li><a href="#">Laws</a></li>
+                    <li><a href="#">Questions and answers</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">Articles</a></li>
+                </ul>
+                </div>
+                <div class="footer_content">
+                    <h5>About company</h5>
+                <ul>
+                    <li><a href="#">Jobs </a></li>
+                    <li><a href="#">Story</a></li>
+                    <li><a href="#">Licenses</a></li>
+                    <li><a href="#">Why are we</a></li>
+                    <li><a href="#">Real estate agency</a></li>
+                </ul>
+                </div>
+                <div class="footer_content">
+                    <h5>Contact</h5>
+                <ul>
+                    <li><a href="#">964 Worthington Drive Dubai, UAE</a></li>
+                    <li><a href="#">dubairealty@mail.com</a></li>
+                    <a id="bookBtn"  href="#">Book a consultation</a>
+                </ul>
+                </div>
+                <div class="footer_mob">
+                    <button class="footer_mob-accordion">Buy</button>
+                    <div class="footer_mob-panel">
+                        <ul>
+                            <li><a href="#">Apartment in Dubai</a></li>
+                            <li><a href="#">House in Dubai</a></li>
+                            <li><a href="#">Apartments in Dubai</a></li>
+                            <li><a href="#">Loft in Dubai</a></li>
+                            <li><a href="#">Penthouse in Dubai</a></li>
+                            <li><a href="#">Villa in Dubai</a></li>
+                        </ul>
+                    </div>
+                    <button class="footer_mob-accordion">Services</button>
+                    <div class="footer_mob-panel">
+                        <ul>
+                            <li><a href="#">Property management in Dubai, UAE</a></li>
+                            <li><a href="#">Sell property in Dubai, UAE</a></li>
+                            <li><a href="#">Rent property in Dubai, UAE</a></li>
+                            <li><a href="#">Investments in Dubai, UAE</a></li>
+                            <li><a href="#">Real estate for cryptocurrency in Dubai</a></li>
+                            <li><a href="#">Moving to Dubai, UAE</a></li>
+                        </ul>
+                    </div>
+                    <button class="footer_mob-accordion">Information</button>
+                    <div class="footer_mob-panel">
+                        <ul>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">Podcasts</a></li>
+                            <li><a href="#">Laws</a></li>
+                            <li><a href="#">Questions and answers</a></li>
+                            <li><a href="#">Books</a></li>
+                            <li><a href="#">Articles</a></li>
+                        </ul>
+                    </div>
+                    <button class="footer_mob-accordion">About company</button>
+                    <div class="footer_mob-panel">
+                        <ul>
+                            <li><a href="#">Jobs </a></li>
+                            <li><a href="#">Story</a></li>
+                            <li><a href="#">Licenses</a></li>
+                            <li><a href="#">Why are we</a></li>
+                            <li><a href="#">Real estate agency</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_content-mob">
+                        <h5>Contact</h5>
+                        <ul>
+                            <li><a href="#">964 Worthington Drive Dubai, UAE</a></li>
+                            <li><a href="#">dubairealty@mail.com</a></li>
+                            <a id="bookBtnMob"  href="#">Book a consultation</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="copyright">Copyright © 2022 Dubai Realty</div>
+            <div class="footer_social">
+                <a href="">
+                    <i id="footer_social_facebook" class="fab fa-facebook-f"></i>
+                </a>
+                <a href="">
+                    <i id="footer_social_twitter" class="fab fa-twitter"></i>
+                </a>
+                <a href="">
+                    <i id="footer_social_youtube" class="fab fa-youtube"></i>
+                </a>
+                <a href="">
+                    <i id="footer_social_instagram" class="fab fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i id="footer_social_linkedin" class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<!--Modal Window-->
+
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Leave your contacts</h2>
+            <p>we will contact you within three hours</p>
+        </div>
+        <div class="modal-body">
+            <input type="text" placeholder="Name">
+            <input type="tel" placeholder="Phone">
+        </div>
+        <div class="modal-footer">
+            <input type="submit" name="submit" value="Send">
+        </div>
+    </div>
+</div>
+
+<!--BURGER-->
+
+<div class="menu">
+    <nav>
+        <ul>
+            <li class="nav__item"><a href="">Buy</a></li>
+            <li class="nav__item"><a href="">Blog</a></li>
+            <li class="nav__item"><a href="">About</a></li>
+            <li class="nav__item"><a href="">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!--Scroll BTN-->
+
+<button onclick="topFunction()" id="scrollBtn" title="Go to top">&#11165;</button>
+
+<script src="jquery.min.js"></script>
+<script src="slick.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
